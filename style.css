@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef4f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  color: #08234a;
+}
+
+.lp {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding-bottom: 90px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+.lp img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  padding: 28px 22px;
+  text-align: center;
+  background: #fff;
+}
+
+.cta p {
+  margin: 0 0 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.cta a,
+.fixed-cta,
+button {
+  display: inline-block;
+  width: 100%;
+  max-width: 480px;
+  padding: 18px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1f9b42, #168536);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(31,155,66,0.25);
+}
+
+.form-section {
+  padding: 34px 22px 50px;
+  background: #fff;
+}
+
+.form-section h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.form-lead {
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+label span {
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #1f9b42;
+  color: #fff;
+  font-size: 12px;
+}
+
+label span.optional {
+  background: #e6e9ed;
+  color: #444;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px 14px;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #fff;
+}
+
+.privacy {
+  margin: 8px 0;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f2f8f4;
+  line-height: 1.7;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fixed-cta {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  width: calc(100% - 28px);
+  max-width: 560px;
+  text-align: center;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .fixed-cta {
+    max-width: 360px;
+  }
+}
