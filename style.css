@@ -11,12 +11,17 @@ body {
 
 .lp {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   background: #fff;
   padding-bottom: 90px;
   box-shadow: 0 0 30px rgba(0,0,0,0.08);
 }
+
+@media (min-width: 900px) {
+  .lp {
+    max-width: 900px;
+  }
 
 .lp img {
   display: block;
