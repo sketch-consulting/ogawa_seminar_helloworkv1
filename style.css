@@ -170,3 +170,86 @@ button {
     max-width: 360px;
   }
 }
+/* 固定CTA */
+
+.fixed-cta {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+
+  width: calc(100% - 28px);
+  max-width: 560px;
+
+  padding: 18px 20px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #28a745,
+    #1b8d35
+  );
+
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* 光 */
+
+.fixed-cta::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -120%;
+
+  width: 60%;
+  height: 100%;
+
+  transform: skewX(-25deg);
+
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0),
+    rgba(255,255,255,.55),
+    rgba(255,255,255,0)
+  );
+
+  animation: shine 3.5s infinite;
+}
+
+@keyframes shine {
+
+  0% {
+    left: -120%;
+  }
+
+  20% {
+    left: 130%;
+  }
+
+  100% {
+    left: 130%;
+  }
+
+}
+
+/* PC */
+
+@media (min-width: 768px) {
+
+  .fixed-cta {
+    max-width: 420px;
+  }
+
+}
